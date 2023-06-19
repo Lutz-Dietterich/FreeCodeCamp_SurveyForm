@@ -25,7 +25,14 @@
         <form action="#" id="survey-form" class="survey-form">
           <div class="form-group">
             <label id="name-label" for="name">Name</label>
-            <input type="text" id="name" required placeholder="Dein Name" />
+            <input
+              type="text"
+              id="name"
+              required
+              placeholder="Dein Name"
+              pattern="[A-Za-z\s]+"
+              title="Bitte nur Buchstaben verwenden"
+            />
           </div>
 
           <div class="form-group">
