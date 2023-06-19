@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <body_wrapper class="body_wrapper">
+      <header>
+        <h1>FreeCodeCamp Umfrageformular</h1>
+        <p class="header-text">
+          Das ist eine allgemeine Umfrage zum Thema Hunde.
+        </p>
+      </header>
+      <main>
+        <form action="#" id="survey-form" class="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" required placeholder="Dein Name" />
+          </div>
+
+          <div class="form-group">
+            <label id="email-label" for="email">E-Mail</label>
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="Deine E-Mail"
+            />
+          </div>
+
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Alter <span>(optional)</span></label
+            >
+            <input
+              type="date"
+              id="number"
+              min="1"
+              max="10"
+              placeholder="Dein Alter"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="dropdown"
+              >Welches Thema interessiert Dich gerade am meisten?</label
+            >
+
+            <select name="pets" id="dropdown" required>
+              <option value="">--Please choose an option--</option>
+              <option value="Hunderassen">Hunderassen</option>
+              <option value="Hundeerziehung">Hundeerziehung</option>
+              <option value="Hundegesundheit">Hundegesundheit</option>
+              <option value="Hundeernährung">Hundeernährung</option>
+              <option value="Hundeausstattung">Hundeausstattung</option>
+              <option value="Hundetraining">Hundetraining</option>
+              <option value="Hundeaktivitäten">Hundeaktivitäten</option>
+              <option value="Hundeadoption">Hundeadoption</option>
+              <option
+                value="Hunde-Verhaltensweisen
+                    "
+              >
+                Hunde-Verhaltensweisen
+              </option>
+              <option value="Hunde-Zubehör">Hunde-Zubehör</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="radio">Würdest Du diese Seite weiterempfehlen?</label>
+            <input name="user-recommend" type="radio" value="ja" required />ja
+            <input
+              name="user-recommend"
+              type="radio"
+              value="nein"
+              required
+            />nein
+          </div>
+
+          <div class="form-group">
+            <label for="dropdown2"
+              >Welches Thema interessiert Dich gerade am meisten?</label
+            >
+
+            <select name="pets" id="dropdown2" required>
+              <option value="">--Please choose an option--</option>
+              <option value="Hunderassen">Hunderassen</option>
+              <option value="Hundeerziehung">Hundeerziehung</option>
+              <option value="Hundegesundheit">Hundegesundheit</option>
+              <option value="Hundeernährung">Hundeernährung</option>
+              <option value="Hundeausstattung">Hundeausstattung</option>
+              <option value="Hundetraining">Hundetraining</option>
+              <option value="Hundeaktivitäten">Hundeaktivitäten</option>
+              <option value="Hundeadoption">Hundeadoption</option>
+              <option
+                value="Hunde-Verhaltensweisen
+                    "
+              >
+                Hunde-Verhaltensweisen
+              </option>
+              <option value="Hunde-Zubehör">Hunde-Zubehör</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="checkbox">Wie gefällt Dir diese Seite?</label>
+            <input name="checkbox" type="checkbox" value="gut" />Es ist gut
+            <input name="checkbox" type="checkbox" value="schlecht" />Es ist
+            schlecht
+          </div>
+
+          <div class="textarea-group">
+            <label for="textarea1">Beschriftung:</label>
+            <div class="textarea-wrapper">
+              <textarea
+                id="textarea1"
+                name="textarea"
+                class="textarea"
+                type="text"
+                placeholder="Beschreibe Deine Erfahrungen"
+              ></textarea>
+            </div>
+          </div>
+
+          <button class="submit-button" type="submit" id="submit">
+            Submit
+          </button>
+        </form>
+      </main>
+    </body_wrapper>
+  </body>
+</html>
