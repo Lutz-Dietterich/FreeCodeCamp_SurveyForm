@@ -4,14 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://img.icons8.com/ios-filled/50/pet.png"
+    />
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <body_wrapper class="body_wrapper">
       <header>
-        <h1>FreeCodeCamp Umfrageformular</h1>
-        <p class="header-text">
+        <h1 id="title">FreeCodeCamp Umfrageformular</h1>
+        <p id="descriptiion" class="header-text">
           Das ist eine allgemeine Umfrage zum Thema Hunde.
         </p>
       </header>
@@ -37,7 +43,7 @@
               >Alter <span>(optional)</span></label
             >
             <input
-              type="date"
+              type="number"
               id="number"
               min="1"
               max="10"
@@ -50,8 +56,8 @@
               >Welches Thema interessiert Dich gerade am meisten?</label
             >
 
-            <select name="pets" id="dropdown" required>
-              <option value="">--Please choose an option--</option>
+            <select name="dogTheme" id="dropdown" required>
+              <option value="">--Bitte wählen Sie eine Option aus--</option>
               <option value="Hunderassen">Hunderassen</option>
               <option value="Hundeerziehung">Hundeerziehung</option>
               <option value="Hundegesundheit">Hundegesundheit</option>
@@ -60,61 +66,111 @@
               <option value="Hundetraining">Hundetraining</option>
               <option value="Hundeaktivitäten">Hundeaktivitäten</option>
               <option value="Hundeadoption">Hundeadoption</option>
-              <option
-                value="Hunde-Verhaltensweisen
-                    "
-              >
+              <option value="Hunde-Verhaltensweisen">
                 Hunde-Verhaltensweisen
               </option>
               <option value="Hunde-Zubehör">Hunde-Zubehör</option>
             </select>
           </div>
 
-          <div>
-            <label for="radio">Würdest Du diese Seite weiterempfehlen?</label>
-            <input name="user-recommend" type="radio" value="ja" required />ja
-            <input
-              name="user-recommend"
-              type="radio"
-              value="nein"
-              required
-            />nein
+          <div class="form-group_radio">
+            <label for="radio"
+              >Hast du selber einen Hund oder sogar mehrere?</label
+            >
+
+            <div class="radio-wrapper">
+              <label>
+                <input
+                  name="radio"
+                  type="radio"
+                  value="ja"
+                  class="radio"
+                  required
+                />ja
+              </label>
+              <label>
+                <input
+                  name="radio"
+                  type="radio"
+                  value="nein"
+                  class="radio"
+                  required
+                />nein
+              </label>
+            </div>
           </div>
 
           <div class="form-group">
             <label for="dropdown2"
-              >Welches Thema interessiert Dich gerade am meisten?</label
+              >Welcher Hundetyp findest du am spannensten?</label
             >
 
-            <select name="pets" id="dropdown2" required>
-              <option value="">--Please choose an option--</option>
-              <option value="Hunderassen">Hunderassen</option>
-              <option value="Hundeerziehung">Hundeerziehung</option>
-              <option value="Hundegesundheit">Hundegesundheit</option>
-              <option value="Hundeernährung">Hundeernährung</option>
-              <option value="Hundeausstattung">Hundeausstattung</option>
-              <option value="Hundetraining">Hundetraining</option>
-              <option value="Hundeaktivitäten">Hundeaktivitäten</option>
-              <option value="Hundeadoption">Hundeadoption</option>
-              <option
-                value="Hunde-Verhaltensweisen
-                    "
-              >
-                Hunde-Verhaltensweisen
-              </option>
-              <option value="Hunde-Zubehör">Hunde-Zubehör</option>
+            <select name="dogType" id="dropdown2" required>
+              <option value="">--Bitte wählen Sie eine Option aus--</option>
+              <option value="Jagdhund">Jagdhund</option>
+              <option value="Hütehund">Hütehund</option>
+              <option value="Begleithund">Begleithund</option>
+              <option value="Wachhund">Wachhund</option>
+              <option value="Schutzhund">Schutzhund</option>
+              <option value="Arbeitshund">Arbeitshund</option>
+              <option value="Rettungshund">Rettungshund</option>
+              <option value="Therapiehund">Therapiehund</option>
+              <option value="Schlittenhund">Schlittenhund</option>
+              <option value="Spürhund">Spürhund</option>
+              <option value="Blindenhund">Blindenhund</option>
+              <option value="Assistenzhund">Assistenzhund</option>
+              <option value="Lawinenhund">Lawinenhund</option>
+              <option value="Suchhund">Suchhund</option>
+              <option value="Herdenhund">Herdenhund</option>
+              <option value="Familienhund">Familienhund</option>
+              <option value="Polizeihund">Polizeihund</option>
+              <option value="Militärhund">Militärhund</option>
+              <option value="Schäferhund">Schäferhund</option>
+              <option value="Agilityhund">Agilityhund</option>
             </select>
           </div>
 
-          <div>
-            <label for="checkbox">Wie gefällt Dir diese Seite?</label>
-            <input name="checkbox" type="checkbox" value="gut" />Es ist gut
-            <input name="checkbox" type="checkbox" value="schlecht" />Es ist
-            schlecht
+          <div class="form-group_checkbox">
+            <label for="checkbox" class="form-group_checkbox-first"
+              >Welche Hundeaktivitäten magst du?</label
+            >
+            <label>
+              <input
+                name="checkbox"
+                type="checkbox"
+                value="spaziergänge"
+              />Spaziergänge
+            </label>
+            <label>
+              <input name="checkbox" type="checkbox" value="Agility" />Agility
+            </label>
+            <label>
+              <input
+                name="checkbox"
+                type="checkbox"
+                value="Hundesport"
+              />Hundesport
+            </label>
+            <label>
+              <input
+                name="checkbox"
+                type="checkbox"
+                value="Hundeausstellungen"
+              />Hundeausstellungen
+            </label>
+            <label>
+              <input
+                name="checkbox"
+                type="checkbox"
+                value="Hundebaden"
+              />Hundebaden
+            </label>
           </div>
 
           <div class="textarea-group">
-            <label for="textarea1">Beschriftung:</label>
+            <label for="textarea1"
+              >Schreibe etwas über deine Erfahrungen mit Hunden.</label
+            >
             <div class="textarea-wrapper">
               <textarea
                 id="textarea1"
@@ -129,6 +185,11 @@
           <button class="submit-button" type="submit" id="submit">
             Submit
           </button>
+          <p>
+            <a href="https://icons8.com/icon/uKlTjfKow8jE/pet">Pet</a> icon by
+
+            <a href="https://icons8.com">Icons8</a>
+          </p>
         </form>
       </main>
     </body_wrapper>

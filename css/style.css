@@ -108,6 +108,67 @@ main {
   border: 2px solid #fafafa;
 }
 
+.form-group_radio {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 1rem 0 0 0;
+  font-size: 1.3rem;
+  color: #fafafa;
+}
+
+.form-group_radio label {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem 0 0.5rem 0;
+  color: #fafafa;
+  align-items: center;
+}
+
+.radio-wrapper {
+  display: flex;
+  flex-direction: row;
+  /* margin: 0.5rem; */
+  color: #fafafa;
+  align-items: center;
+}
+
+.form-group_radio input {
+  margin: 0.5rem;
+  color: #fafafa;
+  align-items: center;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.form-group_checkbox {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 1rem 0 0 0;
+  font-size: 1.3rem;
+  color: #fafafa;
+}
+
+.form-group_checkbox-first {
+  margin-bottom: 1rem;
+}
+
+.form-group_checkbox label {
+  display: flex;
+  flex-direction: row;
+  color: #fafafa;
+  align-items: center;
+}
+
+.form-group_checkbox input {
+  margin: 0.5rem;
+  color: #fafafa;
+  align-items: center;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
 .textarea-group {
   display: flex;
   flex-direction: column;
@@ -118,7 +179,6 @@ main {
 }
 
 .textarea-group label {
-  margin-bottom: 0.5rem;
   color: #fafafa;
 }
 
@@ -166,6 +226,19 @@ main {
 
 .submit-button:active {
   transform: scale(0.98);
+}
+
+form a {
+  color: #fafafa;
+  text-decoration: none;
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
+
+form p {
+  color: #fafafa;
+  font-size: 0.8rem;
+  margin: 1rem 0;
 }
 
 @media screen and (max-width: 768px) {
